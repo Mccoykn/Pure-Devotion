@@ -1,0 +1,189 @@
+/* PURE DEVOTION BRAND COLORS */
+
+:root{
+--brand-blue:#1b2a49;
+--brand-pink:#e96ba8;
+--dark:#222;
+--light:#f6f6f6;
+--white:#ffffff;
+}
+
+
+/* BODY */
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:var(--light);
+color:var(--dark);
+}
+
+
+/* HEADER */
+
+header{
+background:var(--brand-blue);
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+color:var(--brand-pink);
+letter-spacing:2px;
+}
+.logo{
+width:140px;
+height:auto;
+display:block;
+margin:10px auto;
+}
+
+/* NAVIGATION */
+
+nav ul{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+nav li{
+display:inline-block;
+margin:0 15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:var(--brand-pink);
+}
+
+
+/* HERO / BANNER */
+
+.hero{
+background:linear-gradient(135deg,var(--brand-blue),var(--brand-pink));
+color:white;
+padding:70px;
+text-align:center;
+}
+
+
+/* SECTIONS */
+
+section{
+padding:40px;
+text-align:center;
+}
+
+h2{
+color:var(--brand-blue);
+}
+
+
+/* PRODUCT CARDS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+padding:30px;
+}
+
+.product-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+.product-card:hover{
+transform:scale(1.05);
+transition:.3s;
+}
+.product-card img{
+width: 75%;
+height:180x;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+
+/* BUTTONS */
+
+button{
+background:var(--brand-blue);
+color:white;
+padding:10px 16px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:var(--brand-pink);
+}
+
+
+/* IMAGE PLACEHOLDER */
+
+.image-space{
+width:300px;
+height:400px;
+background:#ddd;
+margin:20px auto;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#666;
+font-style:italic;
+}
+
+
+/* ASIDE */
+
+aside{
+background:#fff0f6;
+border-left:5px solid var(--brand-pink);
+padding:20px;
+margin:20px;
+}
+
+
+/* TABLE */
+
+table{
+margin:auto;
+border-collapse:collapse;
+}
+
+th{
+background:var(--brand-blue);
+color:white;
+}
+
+th, td{
+border:1px solid #ccc;
+padding:10px;
+}
+
+
+/* FOOTER */
+
+footer{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+footer b{
+color:var(--brand-pink);
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <link rel="stylesheet" href="styles.css">
+<head>
+<title> Welcome to PURE DEVOTION APPAREL</title>
+</head>
+<body>
+      <aside>
+<h3>Scripture of the Week</h3>
+<p><i>Philippians 4:13: "I can do all things through Christ."</i></p>
+<button onclick="showScripture()">Show Scripture</button>
+
+</aside> 
+
+ <header>
+    <img src="images/Pure/2.png" alt="Pure Devotion Logo" class="logo">
+<h1><b>Welcome To PURE DEVOTION APPAREL</b></h1>
+<p><i>The cleanest christian apparel you will find</i></p>
+<button>Shop Now</button>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Shop.html">Shop</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Best Sellers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<hr>
+
+<section>
+<h2><u>New Collection: Walk by Faith</u></h2>
+<p><b>PureDevotion</b> creates clothing designed to <i>inspire conversations about faith</i> and spread the word of God.</p>
+<button>Shop Collection</button>
+</section>
+
+<hr>
+
+
+<section>
+  <h2>Shop by Category</h2>
+  <ul>
+    <li>Hoodies</li>
+    <li>Blanket pants</li>
+    <li>T-shirts</li>
+    <li>Air brush pants</li>
+  </ul>
+</section>
+<style>
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:30px;
+}
+
+.product-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+.product-card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+.product-card img{
+width: 75%;
+height:180x;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+</style>
+
+<h2> NEW RELEASES</h2>
+<h3>Explore our latest products</h3>
+  <section class="products">
+
+<div class="product-card">
+  <img src="images/Gemini_Generated_Image_m63kwpm63kwpm63k.png" alt="Hoodie that says Jesus Saves" class=" product-card img">
+<h3>Jesus Saves Hoodie/ with custom scripure.</h3>
+<p><b>$30</b></p>
+<button onclick="addToCart('Jesus Saves Hoodie')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/ChatGPT Image Mar 14, 2026, 02_55_42 PM.png" alt="Hoodie" class=" product-card img">
+<h3>Watering My Grass Hoodie</h3>
+<p><b>$25</b></p>
+<button onclick="addToCart('Watering My Grass Hoodie')">Add to Cart</button>
+</div>
+
+
+<div class="product-card">
+ <img src="images/ChatGPT Image Mar 14, 2026, 02_38_44 PM.png" alt="coat" class=" product-card img">
+<h3>Saved By Grace Coat</h3>
+<p><b>$48</b></p>
+<button onclick="addToCart('Saved By Grace Coat')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/Gemini_Generated_Image_5xmdzc5xmdzc5xmd.png" alt="Blue blanket" class=" product-card img">
+<h3>Blue Blanketpants</h3>
+<p><b>$22</b></p>
+<button onclick="addToCart('Blue Blanketpants')">Add to Cart</button>
+</div>
+<div class="product-card">
+<img src="images/Gemini_Generated_Image_9xa5wa9xa5wa9xa5.png" alt="pink pants" class=" product-card img">
+<h3> Pink Blanketpants </h3>
+<p><b>$46</b></p>
+<button onclick="addToCart('Pink Blanketpants')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/Gemini_Generated_Image_bsbfhubsbfhubsbf.png" alt="Mohair" class=" product-card img">
+<h3>Mohair Straight Leg Pants</h3>
+<p><b>$20</b></p>
+<button onclick="addToCart('Mohair Straight Leg Pants')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/Gemini_Generated_Image_7zd42e7zd42e7zd4.png" alt="jean jacket" class=" product-card img">
+<h3>Romans Jean Jacket</h3>
+<p><b>$24</b></p>
+<button onclick="addToCart('Romans Jean Jacket')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/Gemini_Generated_Image_yrpccjyrpccjyrpc.png" alt="necklace" class=" product-card img">
+<h3>Cross Necklace Set</h3>
+<p><b>$18</b></p>
+<button onclick="addToCart('Cross Necklace Set')">Add to Cart</button>
+</div>
+
+</section>
+
+<h2> BEST SELLERS</h2>
+<h4>Eveyone's favorites, right here</h4>
+<table border="1">
+
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Material</th>
+</tr>
+
+<tr>
+<td>Andy Mineo T-shirt</td>
+<td>$25</td>
+<td>Cotton Blend</td>
+</tr>
+
+<tr>
+<td>Pure apparel Hoodie</td>
+<td>$25</td>
+<td>100% Cotton</td>
+</tr>
+
+<tr>
+<td>Unfailing comfort Blanketpants</td>
+<td>$30</td>
+<td>Wool and Cotton</td>
+</tr>
+
+</table>
+
+</section>
+
+<hr>
+
+
+<aside>
+
+<h3>Special Offer</h3>
+
+<p><b>10% OFF</b> your first order when you subscribe to our Brand.</p>
+
+<p><i>Join thousands sharing their faith through fashion.</i></p>
+<button>Join Now</button>
+</aside>
+
+<hr>
+  
+<footer>
+
+<p><b>Pure Devotion</b></p>
+
+<p><i>Inspired by devotion. Designed with purpose.</i></p>
+
+<p>Contact: support@purdevotion.com</p>
+
+<p>© 2026 puredevotion</p>
+
+</footer>
+<script>
+
+function addToCart(productName){
+alert(productName + " added to cart!");
+}
+function showScripture(){
+
+alert("Philippians 4:13\n\n'I can do all things through Christ who strengthens me.'\n\nClick OK to open the Bible App.");
+
+window.open("https://www.bible.com/bible/111/PHP.4.13.NIV", "_blank");
+
+}
+
+</script>
+
+
+</body>
+</html>
