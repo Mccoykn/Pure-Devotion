@@ -1,9 +1,9 @@
 /* PURE DEVOTION BRAND COLORS */
 
 :root{
---brand-blue:#1b2a49;
---brand-pink:#e96ba8;
---dark:#222;
+--brand-blue:#f27333; /* CHANGED from blue to orange */
+--brand-pink:#e01b7a;
+--dark:#55043b;
 --light:#f6f6f6;
 --white:#ffffff;
 }
@@ -107,7 +107,7 @@ transition:.3s;
 }
 .product-card img{
 width: 75%;
-height:180x;
+height:180px; /* fixed typo */
 object-fit:cover;
 border-radius:8px;
 margin-bottom:10px;
