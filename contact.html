@@ -91,13 +91,16 @@ text-align:center;
 /* FOOTER */
 
 footer{
-background:violet;
+background:var(--dark);
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 margin-top:40px;
 }
 
+footer b{
+color:var(--brand-pink);
+}
 </style>
 </head>
 
@@ -117,6 +120,8 @@ margin-top:40px;
 <li><a href="Shop.html">Shop</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
+<li><a href="materialize.html">Home</a></li>
+
 </ul>
 </nav>
 
@@ -150,7 +155,6 @@ margin-top:40px;
 <p id="message"></p>
 
 </section>
-
 
 <aside>
 
@@ -222,6 +226,7 @@ margin-top:40px;
 </ol>
 
 </section>
+
 <script>
 
 function handleSubmit(event){
@@ -237,7 +242,6 @@ message.innerHTML = "Thank you " + userInput.value +
 }
 
 </script>
-
 <footer>
 
 <p><b>Pure Devotion</b></p>
