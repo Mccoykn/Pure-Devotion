@@ -187,3 +187,34 @@ margin-top:40px;
 footer b{
 color:var(--brand-pink);
 }
+.email-contest{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+margin:50px auto;
+}
+
+/* style input + button */
+
+.email-contest input{
+padding:10px;
+width:250px;
+margin:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.email-contest button{
+padding:10px 15px;
+background:#1e3a5f;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.email-contest button:hover{
+background:#e96ba8;
+}
