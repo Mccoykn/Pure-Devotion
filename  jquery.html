@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="styles.css"> 
+<head>
+<title>DEAL & Prizes| Pure Devotion</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+background:rgb(225, 100, 38);
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav ul{
+list-style:none;
+padding:0;
+}
+
+nav li{
+display:inline;
+margin:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* MAIN SECTIONS */
+
+section{
+padding:40px;
+text-align:center;
+}
+
+
+
+/* TABLE */
+
+table{
+margin:auto;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid black;
+padding:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.dark {
+  background: black;
+  color: white;
+}
+
+#box {
+  margin-top: 10px;
+  padding: 20px;
+  background: lightgray;
+}
+.deals{
+text-align:center;
+padding:30px;
+}
+
+#revealDeal{
+padding:12px 20px;
+background:#1e3a5f;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:6px;
+}
+
+#revealDeal:hover{
+background:#e96ba8;
+}
+
+#dealBox{
+margin-top:20px;
+padding:20px;
+background:white;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+width:250px;
+margin-left:auto;
+margin-right:auto;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <img src="images/2.png" alt="Pure Devotion Logo" class="logo">
+
+<h1><b>Pure Devotion</b></h1>
+
+<section>
+    <h2>Click for Dark Mode</h2>
+    <button id="darkModeBtn">Toggle Dark Mode</button>
+  </section>
+</div>
+
+
+<p><i>Wear and Share Your Faith</i></p>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Shop.html">Shop</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="materialize.html">Home</a></li>
+<li><a href="htmlpage.html">Top 5</a></li>
+<li><a href=" jquery.html">DEALS & Prizes</a></li>
+
+
+</ul>
+</nav>
+
+</header>
+
+
+<section class="email-contest">
+
+<h2><b>Enter Your Email For A Chance to Win a Custom Pair of Tapestry Pants</b></h2>
+
+<input type="text" id="nameInput" placeholder="Enter your Email">
+
+<button id="submitBtn">Submit</button>
+
+<p id="output"></p>
+
+</section>
+
+<section class="deals">
+
+<h2>Deals & Prizes</h2>
+
+<p>Click below to reveal your surprise reward!</p>
+
+<button id="revealDeal">Reveal My Deal</button>
+
+<div id="dealBox" style="display:none;">
+<p id="dealText"></p>
+</div>
+
+</section>
+ 
+
+
+
+<footer>
+
+<p><b>Pure Devotion</b></p>
+
+<p><i>Faith - Fashion - Purpose</i></p>
+
+<p>© 2026 Pure Devotion</p>
+
+</footer>
+
+
+<script>
+
+$(document).ready(function() {
+
+$("#submitBtn").click(function() {
+    var name = $("#nameInput").val();
+    $("#output").text("Hello " + name +  " Thank You for Entering to win.");
+  });
+  });
+
+  $("#darkModeBtn").click(function() {
+    $("body").toggleClass("dark");
+  });
+  $("#revealDeal").click(function(){
+
+let deals = [
+" You won 10% OFF!",
+" 20% OFF your next order!",
+"Free Shipping on your purchase!",
+"Buy 1 Get 1 FREE!",
+"Exclusive 15% OFF VIP Deal!"
+];
+
+// pick random deal
+let randomDeal = deals[Math.floor(Math.random() * deals.length)];
+
+// show result
+$("#dealText").text(randomDeal);
+
+// reveal box with animation
+$("#dealBox").fadeIn();
+$(this).prop("disabled", true).text("Deal Revealed!");
+});
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
